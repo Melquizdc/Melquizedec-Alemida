@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sobre Melquizedec</title>
     <style>
+        /*adicionado cores gerais da página*/
         *{
             box-sizing: border-box;
             padding: 0 auto;
@@ -19,26 +20,33 @@
             max-width: 90%;
             max-width: 600px;
         }
+        /*aumentando o tamanho da barra de navegação e do letreiror do link*/
         .nav{
             font-size: 1.3rem;
         }
-        h1{
-            font-size: 3rem;
-            color: orange;        
-        }
-
-        .importantissimo {
-            font-size: 1.5rem;
-            font-weight: 600;
-        }
-        .importante {
-            font-size: 1.2rem;
-            font-weight: 550;
-        }
-        .menu{
+        /*deixando a barra de navegação bonita e centralizada, tentei fazer ela ficar flutuando na tela mas deu errado*/
+        nav{
             display: flex;
             justify-content: center;
         }
+        /*deixando os títulos com destaque adicional*/
+        h1{
+            font-size: 3rem;
+            color: orange;        
+            padding-top: 70px;
+            padding-bottom: 30px;
+        }
+        /*claro que meu nome vai estar em destaque*/
+        .nome {
+            font-size: 1.5rem;
+            font-weight: bolder;
+        }
+        /*o importante merece destaque*/
+        .importante {
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        /*mudando cores*/
         #a, #a .importante{
             color: rgb(2, 104, 168);
             background-color: rgb(209, 244, 86);
@@ -55,17 +63,21 @@
             color: rgb(121, 109, 1);
             background-color: rgb(202, 153, 240);
         }
+        /*modificando o sobre mim, porque vi que ficaria melhor*/
         #e, #e .importantissimo, #e .importante{
         max-width: 70%;
         max-width: 400;
         }
+        /*aumentando o texto do portfólio*/
         #f{
         font-size: 1.3rem;
         }
     </style>
 </head>
 <body>
-    <nav class="menu nav">
+    <br>
+        <nav class="nav">
+        <!--quando clicar vai pra área especificada-->
             <a href="#sm">Sobre Mim</a>
             <a href="#fe">Formação</a>
             <a href="#port">Portfólio</a>
@@ -74,9 +86,10 @@
     <article>
         
         <h1 id="sm">Sobre Mim</h1>
-            <p id="e">Meu nome é <spam class="importantissimo">Melquizedec</spam>. Eu sou um homem <spam class="importante">ambivertido</spam> que gosta de ler histórias em quadrinhos asiáticos (desde meus 13 anos), pensar em várias possibilidades(um exemplo prático é pensar em build de jogo), gosto de animais (principalmente gatos) e sou tecladista da igreja que frequento a dois anos</p>
+            <p id="e">Meu nome é <spam class="nome">Melquizedec Almeida</spam>. Eu sou um homem <spam class="importante">ambivertido</spam> que gosta de ler histórias em quadrinhos asiáticos (desde meus 13 anos), pensar em várias possibilidades(um exemplo prático é pensar em build de jogo), gosto de animais (principalmente gatos) e sou tecladista da igreja que frequento a dois anos</p>
         
         <h1 id="fe">Formação Educacional</h1>
+            <!--queria testar a ideia de colocar tamanhos diferentes e deu certo, tirando pela altura-->
             <table>
                 <td id="a">Eu estudei o ensino fundamental em uma escola particular de Belém do Pará que hoje em dia tem o nome de Sistema de Ensino Cirandinha(<spam class="importante">SIEC</spam>) desde o maternal até o nono ano do fundamental (dos meus 3 anos aos meus 14 anos), é uma boa escola que procura ensinar os valores e a cultura brasileira</td>
                 <td id="b">Já no ensino médio, estudei na escola pública, que também é de Belém, Escola Estadual de Ensino Médio Integral Dr. Ulysses Guimarães (<spam class="importante">EEEMI Dr. Ulysses Guimarães</spam>), que tá desatualizada no Google como EEEFM, desde o primeiro ano do ensino médio até o 3 ano do ensino médio (dos meus 15 anos aos meus 16 anos), é uma escola que procura o desenvolvimento dos alunos. Nunca repeti de ano na escola</td>
@@ -102,7 +115,9 @@
                 </tr><tr>
                     <td colspan="2"><textarea placeholder="Escreva sua mensagem aqui." cols="55" rows="5" maxlength="1000" wrap="hard"></textarea></td>
                 </tr></table>
+            <button >enviar</button>
             </form>
     </article>
+    <br><br><br><br><br><br><br><br><br><br>
 </body>
 </html>
